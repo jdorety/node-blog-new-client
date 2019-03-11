@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import ListPosts from "./components/ListPosts";
+import { Route } from 'react-router-dom';
+import NavBar from './components/navigation/NavBar'
 import "./App.css";
 
 class App extends Component {
@@ -34,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ListPosts posts={this.state.posts} />
+        <Route path="/" render={props => <NavBar {...props} users={this.state.users} />} />
       </div>
     );
   }
