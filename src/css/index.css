@@ -2,6 +2,7 @@
   max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  background-color: olive;
 }
 nav {
   display: flex;
@@ -26,4 +27,13 @@ nav .user-list {
 nav .user-list button {
   max-width: 150px;
   width: 90%;
+}
+.post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 750px;
+  width: 75%;
+  margin-left: 25%;
 }
