@@ -1,0 +1,29 @@
+.App {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  max-width: 750px;
+  width: 20%;
+  margin: 0 auto;
+}
+nav .button-wrapper {
+  display: inherit;
+  flex-direction: column;
+}
+nav .button-wrapper button {
+  max-width: 150px;
+  width: 90%;
+}
+nav .user-list {
+  display: inherit;
+  flex-direction: column;
+}
+nav .user-list button {
+  max-width: 150px;
+  width: 90%;
+}

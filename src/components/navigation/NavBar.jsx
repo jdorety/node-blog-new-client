@@ -1,6 +1,7 @@
 import React from "react";
 import UserList from "./UserList";
 import DefaultButton from "../../styledComponents/DefaultButton";
+import '../../css/index.css'
 
 const NavBar = props => {
   const clickHandler = e => {
@@ -8,13 +9,13 @@ const NavBar = props => {
   }
 
   return (
-    <div className="navigation-wrapper">
-      <nav>
+    <nav>
+      <div className="button-wrapper">
         <DefaultButton onClick={clickHandler} name='/'>All Quotes</DefaultButton>
         <DefaultButton onClick={clickHandler} name='/addquote' >Add Quote</DefaultButton>
-      </nav>
+      </div>
       <UserList users={props.users} history={props.history} />
-    </div>
+    </nav>
   );
 };
 
