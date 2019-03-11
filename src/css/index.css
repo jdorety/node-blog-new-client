@@ -4,6 +4,9 @@
   margin: 0 auto;
   background-color: olive;
 }
+button {
+  margin: 1%;
+}
 nav {
   display: flex;
   flex-direction: column;
@@ -36,4 +39,7 @@ nav .user-list button {
   max-width: 750px;
   width: 75%;
   margin-left: 25%;
+}
+.post-list p {
+  margin-right: 2%;
 }
